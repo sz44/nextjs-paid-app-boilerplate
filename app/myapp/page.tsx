@@ -1,8 +1,6 @@
 import { auth } from '@/auth'
 import PkgSelector from '@/components/pkgSelector'
 import SignOut from '@/components/signout';
-// import {useSession} from 'next-auth/react'
-// import {redirect} from 'next/navigation'
 
 export default async function Page() {
     const session = await auth();
