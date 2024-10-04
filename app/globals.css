@@ -20,6 +20,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+button {
+  border: 1px solid white;
+  padding: 0 1rem;
+  background: rgb(64, 121, 38);
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
