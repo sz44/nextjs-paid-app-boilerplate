@@ -2,7 +2,7 @@ import { NextRequest } from "next/server";
 import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string);
-const endpointSecret = "whsec_cb8cc75b4ff3dadc4764641dacd29cd577cd857d569655f3af3a1acb7de23f77";
+const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
 export async function POST(req: NextRequest) {
 	const body = await req.text();
